@@ -30,7 +30,7 @@
       alert('and here');
       //alert(`Sheet name - ${wsname}`);
 
-      $('body').append('<p>Sheet - ' + ${wsname} + '</p>')
+      $('body').append('<p>Sheet - ' + wsname + '</p>')
     });
   }
 
