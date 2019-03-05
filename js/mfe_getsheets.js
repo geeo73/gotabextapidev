@@ -28,7 +28,9 @@
       // For now, just pop up an alert saying that we've selected a sheet
       var wsname = worksheet.name;
       alert('and here');
-      alert(`Sheet name - ${wsname}`);
+      //alert(`Sheet name - ${wsname}`);
+
+      $('body').append('<p>Sheet - ' + ${wsname} + '</p>')
     });
   }
 
