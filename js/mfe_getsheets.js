@@ -14,20 +14,19 @@
     /**
    * Shows the choose sheet UI. Once a sheet is selected, the data table for the sheet is shown
    */
-  function showSheetNames () {
+  function showSheetNames() {
     
     // Set the dashboard's name in the title
     const dashboardName = tableau.extensions.dashboardContent.dashboard.name;
     $('#dashboard_name').text(dashboardName);
+    alert('here');
 
     // The first step in choosing a sheet will be asking Tableau what sheets are available
     const worksheets = tableau.extensions.dashboardContent.dashboard.worksheets;
-
     // Next, we loop through all of these worksheets and pop an alert with it's name
     worksheets.forEach(function (worksheet) {
       // For now, just pop up an alert saying that we've selected a sheet
       alert(`Worksheet ... ${worksheetName}`);
-
     });
   }
 
