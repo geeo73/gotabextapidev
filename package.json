@@ -1,0 +1,35 @@
+{
+  "name": "gotabextapidev",
+  "version": "0.1.0",
+  "description": "GO Tableau Deve",
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -p 8765",
+    "lint": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geeo73/gotabextapidev"
+  },
+  "author": "tableau",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "semistandard": "^11.0.0"
+  },
+  "semistandard": {
+    "env": {
+      "jquery": true,
+      "browser": true,
+      "tableau": true
+    },
+    "globals": [
+      "tableau"
+    ],
+    "ignore": [
+      "/lib",
+      "/docs"
+    ]
+  }
+}
