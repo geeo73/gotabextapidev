@@ -26,7 +26,9 @@
     // Next, we loop through all of these worksheets and pop an alert with it's name
     worksheets.forEach(function (worksheet) {
       // For now, just pop up an alert saying that we've selected a sheet
-      alert(`Worksheet ... ${worksheetName}`);
+      var wsname = worksheet.name;
+      alert('and here');
+      alert(`Sheet name - ${wsname}`);
     });
   }
 
