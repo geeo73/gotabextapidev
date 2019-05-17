@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>GO Data GO Viz Reset Filters Flush</title>
+    <title>GO Data GO CP Items</title>
     
 	<!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -18,13 +18,16 @@
     
 	<!-- Our extension's code and style sheet-->
     <link rel="stylesheet" href="../css/mfe.css">
-	<script src="../js/godatagovizfilterreset.js"></script>
-  </head>
-  <body>
-    <!-- New Settings Submission Form -->
-    <div id="filterresetdiv" style="display: inline;">  
-      <input id="rfb" type="image" src="../images/resetfilters.png" style="height:40px;width:40px">
-      <!--<div id="a" style="display: inline;">a</div><div id="b" style="display: inline;">b</div>-->
+	<script src="../js/godatagoviztabdcp.js"></script>
+	</head>
+  <!-- New Settings Submission Form -->
+  <div id="filterresetdiv">  
+    <div id="active" style="display: none;">      
+      Return value from config for refresh interval ...  <b><span id="interval">5</span></b> minutes.     
+      <image id="resetfilterspng" type="image" src="../images/resetfilters.png" title="Reset Filters" alt="Reset Filters" height="25" width="25"></image>
     </div>
-  </body>
+    <div id="inactive">
+      TDCP Not Configured - Configure to Continue...
+    </div>    
+  </div>
 </html>

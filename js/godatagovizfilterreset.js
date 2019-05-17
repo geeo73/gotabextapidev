@@ -6,7 +6,10 @@
 
   $(document).ready(function () {
       // Add button handlers for clearing filters.
-      $('#resetfilterspng').click(clearAllFilters);
+      //$('#resetfilterspng').click(clearAllFilters);
+      $('#rfb').click(clearAllFilters);
+      $('#rfb').attr('disabled','disabled');
+      $("#rfb").attr("src", "../images/resetfiltersd.png" )
 
       tableau.extensions.initializeAsync().then(function() {
     }, function (err) {

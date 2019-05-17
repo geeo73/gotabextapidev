@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>GO Data GO Viz Reset Filters Flush</title>
+    <title>GO Data GO Tableau Dashboard Control Panel</title>
     
 	<!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -17,14 +17,16 @@
     <script src="../js/tableau-extensions-1.latest.js"></script>
     
 	<!-- Our extension's code and style sheet-->
-    <link rel="stylesheet" href="../css/mfe.css">
-	<script src="../js/godatagovizfilterreset.js"></script>
-  </head>
-  <body>
-    <!-- New Settings Submission Form -->
-    <div id="filterresetdiv" style="display: inline;">  
-      <input id="rfb" type="image" src="../images/resetfilters.png" style="height:40px;width:40px">
-      <!--<div id="a" style="display: inline;">a</div><div id="b" style="display: inline;">b</div>-->
-    </div>
-  </body>
+  <link rel="stylesheet" href="../css/mfe.css">
+	<script src="../js/godatagoviztabdcpui.js"></script>
+	</head>
+  <!-- New Settings Submission Form -->
+  <div id="filterresetdiv" class="container">
+    <h4>Tableau Dashboard Control Panel</h4>
+    <p>This extension will allow setting off refresh, showing Reset Filters and (hopefully) a paging option using a filter.</p>
+    <h5>Refresh interval in minutes:</h5>
+    <input style="margin-left: 14px" type="number" id="interval" name="quantity" min="1" max="60">
+    <hr />
+    <button id="exitcpconfig">Exit CP Config</button>
+  </div>
 </html>

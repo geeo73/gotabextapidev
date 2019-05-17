@@ -1,7 +1,7 @@
 {
   "name": "gotabextapidev",
   "version": "0.1.0",
-  "description": "GO Tableau Deve",
+  "description": "GO Tableau Dev",
   "scripts": {
     "start": "node node_modules/http-server/bin/http-server -p 8765",
     "lint": "semistandard"
